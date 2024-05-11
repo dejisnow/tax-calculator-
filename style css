@@ -23,3 +23,11 @@ p{
 h2{
     margin-bottom:50px;
 }
+.cgt__div{
+    display:none;
+}
+.cgt__div.active{
+    display:flex;
+}
+
+
