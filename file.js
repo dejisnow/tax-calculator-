@@ -8,6 +8,9 @@ window.onload=()=>{
   //Tax Divs
   
   let cgtDiv = document.querySelector(".cgt__div")
+  let whtDiv = document.querySelector(".wht__div")
+  let vatDiv = document.querySelector(".vat__div")
+  let edtDiv = document.querySelector(".edt__div")
    
   
   let taxBtn = document.querySelectorAll(".tax__btn")
@@ -38,4 +41,3 @@ toggle display
 tax functions
 
 */
-       
