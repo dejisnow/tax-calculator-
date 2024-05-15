@@ -12,16 +12,52 @@ window.onload=()=>{
   let vatDiv = document.querySelector(".vat__div")
   let edtDiv = document.querySelector(".edt__div")
    
-  
   let taxBtn = document.querySelectorAll(".tax__btn")
+  
+  //Loops through all the to select display a particular Div
+  
   
   taxBtn.forEach((btn)=>{
      btn.addEventListener("click",()=>{
       if(btn.classList.contains("cgt")){
           cgtDiv.classList.toggle("active")
-      }
-  }) 
+      }     
   })
+  }) 
+  
+    
+  
+  
+  taxBtn.forEach((btn)=>{
+     btn.addEventListener("click",()=>{
+      if(btn.classList.contains("edt")){
+          edtDiv.classList.toggle("active")
+      }
+  })
+   }) 
+  
+  taxBtn.forEach((btn)=>{
+     btn.addEventListener("click",()=>{
+      if(btn.classList.contains("wht")){
+          whtDiv.classList.toggle("active")
+      }
+  })
+   
+   })
+  taxBtn.forEach((btn)=>{
+     btn.addEventListener("click",()=>{
+      if(btn.classList.contains("vat")){
+          vatDiv.classList.toggle("active")
+      }
+  
+  })
+   
+   })
+  
+  
+  
+  
+  
   
    
     
@@ -33,11 +69,3 @@ window.onload=()=>{
     
 }
 
-/*
-
-All display none 
-only display on click
-toggle display 
-tax functions
-
-*/
