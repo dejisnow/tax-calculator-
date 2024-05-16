@@ -1,5 +1,5 @@
 body {
-    
+    background-image: linear-gradient(90deg, #2BBAFD 0%, #27FFE1 100%);
 }
 .tax__buttonDiv{
     position:absolute ;
@@ -23,10 +23,10 @@ p{
 h2{
     margin-bottom:50px;
 }
-.cgt__div{
+.cgt__div,.edt__div,.wht__div,.vat__div{
     display:none;
 }
-.cgt__div.active{
+.cgt__div.active,.edt__div.active,.wht__div.active,.vat__div.active{
     display:flex;
 }
 
