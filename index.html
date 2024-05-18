@@ -10,10 +10,10 @@
             <h2>Compute Tax</h2>
         </div>
         <div class="tax__buttonDiv">
-            <button class="cgt">CGT</button>
-            <button class="wht">WHT</button>
-            <button class="edt">EDT</button>
-            <button class="vat">VAT</button>
+            <button class="tax__btn cgt">CGT</button>
+            <button class="tax__btn wht">WHT</button>
+            <button class="tax__btn edt">EDT</button>
+            <button class="tax__btn vat">VAT</button>
         </div>
         
         <div class="cgt__div">
@@ -21,20 +21,31 @@
                 <h3>Capital Gain Tax</h3>
                 <p>The Capital Gains Tax (CGT) Act, Cap. C1 LFN 2004 (as amended) imposes a tax of 10% on the total amount of chargeable gains (after making such deductions as may be allowed in the computation of such gains) accruing to any person on the disposal of chargeable assets in a year of assessment.</p>
                 
-                <div>
-                    <label>Disposal Amount</label> <input type="text"/>
+                <div class="cgt_cal_div">
+                    <label>Sales proceed</label> <input type="number"/>
+                    <label>Total allowable expenses</label> <input type="text"/>
+                    <label>Acquisition cost</label> <input type="text"/>
+                    
         <button>Compute</button>
                 </div>
             </div>
         </div>
         <div class="wht__div" >
             <div>
-                <h3>Witholdong Tax</h3>
+                <h3>Witholding Tax</h3>
                 <p>Withholding Tax (WHT) is a method used to collect Income Tax in advance. WHT is deducted at varying rates ranging from 5% to 10% depending on the transaction. The due date for filing WHT returns is 21st day of every succeeding month</p>
                 
                  <div>
-                    <label>Disposal Amount</label> <input type="text"/>
+                    <label>Total Amount(Individual)</label> <input type="text"/>
         <button>Compute</button>
+        
+        <div>
+        
+            <label>Total Amount(Company)</label> <input type="text"/>
+        <button>Compute</button>
+        </div>
+        
+        
                 </div>
             </div>
         </div>
@@ -45,14 +56,14 @@
                 <p>Tertiary education tax is imposed on every Nigerian company at the rate of 3% of the assessable profit for each year of assessment. The tax is payable within two months of an assessment notice from the FIRS. In practice, many companies pay the tax on a self-assessment basis along with their CIT.</p>
                 
                <div>
-                    <label>Disposal Amount</label> <input type="text"/>
+                    <label>Assessable Profit</label> <input type="text"/>
         <button>Compute</button>
                 </div> 
                 
             </div>
         </div>
         
-        <div>
+        <div class="vat__div">
             <div>
                 <h3>Value Added Tax</h3>
                 <p>
@@ -60,7 +71,7 @@
                 </p>
                 
              <div>
-                    <label>Disposal Amount</label> <input type="text"/>
+                    <label>Total Amount</label> <input type="text"/>
         <button>Compute</button>
                 </div>   
             </div>
