@@ -9,6 +9,12 @@ body {
     text-align:center;
     left:15%;
 }
+.cgt_cal_div{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    
+}
 .tax__buttonDiv button{
     padding:5px;
     width:50px;
