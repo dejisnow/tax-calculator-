@@ -11,11 +11,23 @@ window.onload=()=>{
   let whtDiv = document.querySelector(".wht__div")
   let vatDiv = document.querySelector(".vat__div")
   let edtDiv = document.querySelector(".edt__div")
+   //Input Divs
    
+   let salesPro = document.querySelector(".sales__proceeds");
+   let allowableExp= document.querySelector(".allowable__exp")
+   let aqCost = document.querySelector(".aq__cost")
+   
+   //buttons
+  
   let taxBtn = document.querySelectorAll(".tax__btn")
   
-  //Loops through all the to select display a particular Div
   
+  //Cgt btn 
+  let cgtBtn = document.querySelector(".cgt__btn")
+  
+  cgtBtn.addEventListener("click",()=>{
+      
+  })
   
   taxBtn.forEach((btn)=>{
      btn.addEventListener("click",()=>{
@@ -69,3 +81,11 @@ window.onload=()=>{
     
 }
 
+/*
+
+All display none 
+only display on click
+toggle display 
+tax functions
+
+*/
