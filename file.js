@@ -25,6 +25,14 @@ window.onload=()=>{
   //Cgt btn 
   let cgtBtn = document.querySelector(".cgt__btn")
   
+  //Computation buttons
+  let indInput = document.querySelector(".indInput");
+  let coyInput = document.querySelector(".coyInput");
+  let whtIndBtn = document.querySelector(".wht__ind");
+  let whtCoyBtn = document.querySelector(".wht__coy");
+  
+ 
+  
   cgtBtn.addEventListener("click",()=>{
       
   })
@@ -68,7 +76,10 @@ window.onload=()=>{
   
   
   
-  
+  //Wht computation 
+  whtIndBtn.addEventListener("click",()=>{
+      
+  })
   
   
    
