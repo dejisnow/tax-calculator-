@@ -26,10 +26,11 @@ window.onload=()=>{
   let cgtBtn = document.querySelector(".cgt__btn")
   
   //Computation buttons
+  //Witholding tax variables 
   let indInput = document.querySelector(".indInput");
   let coyInput = document.querySelector(".coyInput");
-  let whtIndBtn = document.querySelector(".wht__ind");
-  let whtCoyBtn = document.querySelector(".wht__coy");
+  let whtIndBtn = document.querySelector(".wht__indBtn");
+  let whtCoyBtn = document.querySelector(".wht__coyBtn");
   
  
   
@@ -78,7 +79,16 @@ window.onload=()=>{
   
   //Wht computation 
   whtIndBtn.addEventListener("click",()=>{
-      
+
+  let result = (parseInt(indInput.value)* 0.1)
+     indInput.value = ""
+     return alert(`Tax payable = ${result}`)
+  })
+  whtCoyBtn.addEventListener("click",()=>{
+
+  let result = (parseInt(coyInput.value)* 0.2)
+     indInput.value = ""
+     return alert(`Tax payable = ${result}`)
   })
   
   
